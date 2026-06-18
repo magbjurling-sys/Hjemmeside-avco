@@ -45,8 +45,7 @@ Skjemameldinger i `js/main.js` tilpasses sidens `<html lang>` automatisk.
 ├── css/style.css
 ├── js/main.js
 ├── images/                  # portretter (8 ansatte) + medlemslogo
-├── partials/tpl-fag.html    # delt sidemal (ikke lenket)
-└── .github/workflows/pages.yml   # auto-publisering til GitHub Pages
+└── partials/tpl-fag.html    # delt sidemal (ikke lenket)
 ```
 
 ## Kjøre lokalt
@@ -73,12 +72,13 @@ kundeuttalelser, FAQ og tydelige call-to-action (gratis vurdering / ring).
 
 ## Publisering (GitHub Pages)
 
-`.github/workflows/pages.yml` publiserer siden automatisk ved push til `main`.
-Slik aktiverer du det én gang:
+Siden publiseres direkte fra en branch (statiske filer i rot):
 
-1. Merge denne branchen til `main`.
-2. På GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Workflowen kjører og publiserer på `https://<bruker>.github.io/<repo>/`.
+1. På GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
+2. Velg branchen (f.eks. `claude/torgersen-nettsted`) og mappe **/(root)**.
+3. Siden publiseres på `https://<bruker>.github.io/<repo>/`.
+
+Oppdateringer på den valgte branchen publiseres automatisk på nytt.
 
 ## Kontaktskjema (Formspree)
 
