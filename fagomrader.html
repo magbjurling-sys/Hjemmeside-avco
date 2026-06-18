@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fagområder | Personskade, voldsoffererstatning og trygderett</title>
-  <meta name="description" content="Personskadeerstatning, voldsoffererstatning, trygderett og mekling. Advokatfirmaet Torgersen hjelper deg å nå frem mot forsikringsselskap og NAV. Gratis vurdering.">
+  <title>Fagområder | Advokatfirmaet Torgersen</title>
+  <meta name="description" content="Våre fagområder: personskade, bistandsadvokat, voldsoffererstatning, NAV/trygd og familierett. Advokatfirmaet Torgersen hjelper deg å nå frem. Gratis vurdering.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +15,18 @@
       <button class="nav-toggle" aria-label="Meny" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Forside</a></li>
-        <li><a href="fagomrader.html" class="active">Fagområder</a></li>
+        <li class="has-sub">
+          <a href="fagomrader.html" class="parent active">Fagområder<span class="caret">▾</span></a>
+          <ul class="submenu">
+            <li><a href="fagomrader.html">Alle fagområder</a></li>
+            <li><a href="personskade.html">Personskade</a></li>
+            <li><a href="bistandsadvokat.html">Bistandsadvokat</a></li>
+            <li><a href="voldsoffererstatning.html">Voldsoffererstatning</a></li>
+            <li><a href="nav-saker.html">NAV / trygd</a></li>
+            <li><a href="familierett.html">Familierett</a></li>
+          </ul>
+        </li>
+        <li><a href="priser.html">Priser</a></li>
         <li><a href="ansatte.html">Ansatte</a></li>
         <li><a href="om-firmaet.html">Om firmaet</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -29,8 +40,8 @@
         <span class="eyebrow">Fagområder</span>
         <h1>Spesialisert bistand når det betyr mest.</h1>
         <p class="lead">Vi arbeider for personer som har blitt skadet eller syke – ofte den
-          svakere part i møte med forsikringsselskap og det offentlige. Her ser du hvordan vi
-          kan hjelpe deg.</p>
+          svakere part i møte med forsikringsselskap og det offentlige. Velg fagområdet som
+          passer din situasjon.</p>
         <div class="hero-actions">
           <a href="kontakt.html" class="btn btn-light">Få gratis vurdering</a>
           <a href="tel:+4798672929" class="phone"><span>Ring oss direkte</span>98 67 29 29</a>
@@ -40,46 +51,42 @@
 
     <section class="section">
       <div class="container">
-        <div class="split" style="align-items:start">
-          <div class="reveal">
-            <span class="eyebrow">01</span>
-            <h2>Personskadeerstatning</h2>
-            <p>Har du blitt påført en skade som gir varige plager eller økonomisk tap? Vi bistår
-              i saker etter trafikkulykker, yrkesskade, pasientskade og andre ulykker.</p>
-            <p>Forsikringsselskapene har egne advokater og eksperter. Det bør du også ha. Vi
-              sørger for at saken blir riktig opplyst, at frister overholdes, og at du får
-              dekket både økonomisk tap og menerstatning – ikke bare det selskapet tilbyr først.</p>
-          </div>
-          <div class="reveal">
-            <span class="eyebrow">02</span>
-            <h2>Voldsoffererstatning</h2>
-            <p>Er du utsatt for vold eller overgrep, kan du ha krav på erstatning både fra
-              gjerningspersonen og fra staten gjennom voldsoffererstatningsordningen.</p>
-            <p>Som medlem av Advokatforeningens bistandsadvokatutvalg har vi særlig erfaring med
-              denne typen saker. Vi bistår trygt og skånsomt gjennom hele prosessen – fra
-              anmeldelse og dokumentasjon til søknad og eventuell klage.</p>
-          </div>
-        </div>
-
-        <div class="split" style="align-items:start; margin-top:3.5rem">
-          <div class="reveal">
-            <span class="eyebrow">03</span>
-            <h2>Trygderett</h2>
-            <p>Trygdesaker mot NAV kan være krevende og uoversiktlige. Vi hjelper deg i saker om
-              uføretrygd, arbeidsavklaringspenger (AAP), yrkesskade og andre trygdeytelser.</p>
-            <p>Har du fått avslag? Et avslag er ikke nødvendigvis siste ord. Vi kvalitetssikrer
-              vedtaket, utformer klage og fører saken videre i systemet når det er grunnlag for
-              å nå frem.</p>
-          </div>
-          <div class="reveal">
-            <span class="eyebrow">04</span>
-            <h2>Forhandling &amp; mekling</h2>
-            <p>Med en internasjonal mastergrad spesialisert i forhandling og mekling legger vi
-              vekt på å finne gode løsninger – gjerne uten unødig konflikt og rettssak.</p>
-            <p>En forhandlet løsning gir ofte raskere avklaring og mindre belastning for deg,
-              samtidig som interessene dine ivaretas fullt ut. Skulle forlik ikke føre frem, er
-              vi klare til å føre saken for retten.</p>
-          </div>
+        <div class="grid">
+          <article class="card reveal">
+            <span class="num">01</span>
+            <h3><a href="personskade.html">Personskade</a></h3>
+            <p>Erstatning etter trafikkskade, yrkesskade, yrkessykdom, pasientskade og
+              fritidsulykke – for både økonomisk tap og menerstatning.</p>
+            <p style="margin-top:1rem"><a href="personskade.html">Les mer →</a></p>
+          </article>
+          <article class="card reveal">
+            <span class="num">02</span>
+            <h3><a href="bistandsadvokat.html">Bistandsadvokat</a></h3>
+            <p>Bistand til fornærmede ved vold og overgrep – voldtekt, overgrep mot barn,
+              familievold og andre voldshendelser.</p>
+            <p style="margin-top:1rem"><a href="bistandsadvokat.html">Les mer →</a></p>
+          </article>
+          <article class="card reveal">
+            <span class="num">03</span>
+            <h3><a href="voldsoffererstatning.html">Voldsoffererstatning</a></h3>
+            <p>Hjelp til å søke voldsoffererstatning og til å klage på vedtak fra Kontoret for
+              voldsoffererstatning (KFV).</p>
+            <p style="margin-top:1rem"><a href="voldsoffererstatning.html">Les mer →</a></p>
+          </article>
+          <article class="card reveal">
+            <span class="num">04</span>
+            <h3><a href="nav-saker.html">NAV / trygd</a></h3>
+            <p>Sykepenger, arbeidsavklaringspenger, uføretrygd, menerstatning og klage på
+              NAV-vedtak – helt til Trygderetten.</p>
+            <p style="margin-top:1rem"><a href="nav-saker.html">Les mer →</a></p>
+          </article>
+          <article class="card reveal">
+            <span class="num">05</span>
+            <h3><a href="familierett.html">Familierett</a></h3>
+            <p>Foreldreansvar, fast bosted og samvær – gode løsninger for barna i en
+              vanskelig tid.</p>
+            <p style="margin-top:1rem"><a href="familierett.html">Les mer →</a></p>
+          </article>
         </div>
       </div>
     </section>
@@ -90,16 +97,17 @@
         <div class="reveal">
           <span class="eyebrow" style="color:var(--sand)">Hva koster det?</span>
           <h2>Ofte dekkes advokatutgiftene</h2>
-          <p>Mange utsetter å ta kontakt fordi de er redde for kostnadene. Men i personskadesaker
-            plikter motpartens forsikringsselskap ofte å dekke rimelige og nødvendige
-            advokatutgifter når ansvaret er på plass.</p>
+          <p>Mange utsetter å ta kontakt fordi de er redde for kostnadene. Men i mange saker
+            dekkes rimelige og nødvendige advokatutgifter av motpartens forsikringsselskap,
+            rettshjelpforsikring, fri rettshjelp eller det offentlige.</p>
+          <p><a href="priser.html" style="color:var(--sand)">Les mer om priser og dekning →</a></p>
         </div>
         <div class="reveal">
           <ul class="usp">
             <li><strong>Forsikringsselskapets ansvar.</strong> Dekker ofte advokatutgifter ved erkjent ansvar.</li>
             <li><strong>Rettshjelpforsikring.</strong> Innbo- og andre forsikringer dekker mange tvister.</li>
             <li><strong>Fri rettshjelp.</strong> Kan være aktuelt i enkelte sakstyper og ved lav inntekt.</li>
-            <li><strong>Full åpenhet.</strong> Vi avklarer kostnadsbildet før du bestemmer deg.</li>
+            <li><strong>Bistandsadvokat.</strong> Ved vold og overgrep dekker staten ofte advokaten.</li>
           </ul>
         </div>
       </div>
@@ -140,8 +148,11 @@
           <h4>Sider</h4>
           <p><a href="index.html">Forside</a><br>
             <a href="fagomrader.html">Fagområder</a><br>
+            <a href="priser.html">Priser</a><br>
             <a href="ansatte.html">Ansatte</a><br>
             <a href="om-firmaet.html">Om firmaet</a><br>
+            <a href="karriere.html">Karriere</a><br>
+            <a href="resultater-og-artikler.html">Resultater og artikler</a><br>
             <a href="kontakt.html">Kontakt</a></p>
         </div>
       </div>

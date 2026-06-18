@@ -15,7 +15,18 @@
       <button class="nav-toggle" aria-label="Meny" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Forside</a></li>
-        <li><a href="fagomrader.html">Fagområder</a></li>
+        <li class="has-sub">
+          <a href="fagomrader.html" class="parent">Fagområder<span class="caret">▾</span></a>
+          <ul class="submenu">
+            <li><a href="fagomrader.html">Alle fagområder</a></li>
+            <li><a href="personskade.html">Personskade</a></li>
+            <li><a href="bistandsadvokat.html">Bistandsadvokat</a></li>
+            <li><a href="voldsoffererstatning.html">Voldsoffererstatning</a></li>
+            <li><a href="nav-saker.html">NAV / trygd</a></li>
+            <li><a href="familierett.html">Familierett</a></li>
+          </ul>
+        </li>
+        <li><a href="priser.html">Priser</a></li>
         <li><a href="ansatte.html">Ansatte</a></li>
         <li><a href="om-firmaet.html">Om firmaet</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -42,8 +53,8 @@
     <!-- TILLITSSTRIPE -->
     <div class="trustbar">
       <div class="container">
-        <div class="item"><strong>Spesialisert</strong>kun personskade &amp; trygd</div>
-        <div class="item"><strong>15+ års</strong>erfaring som advokat</div>
+        <div class="item"><strong>Spesialisert</strong>personskade, erstatning &amp; trygd</div>
+        <div class="item"><strong>Erfarent team</strong>advokater &amp; fullmektiger</div>
         <div class="item"><strong>Hele landet</strong>oppdrag uansett hvor du bor</div>
         <div class="item"><strong>Uforpliktende</strong>gratis førstevurdering</div>
       </div>
@@ -58,10 +69,11 @@
         </div>
         <div class="reveal">
           <span class="eyebrow">Om firmaet</span>
-          <h2>En advokat som står helt og fullt på din side</h2>
+          <h2>Et erfarent team som står helt og fullt på din side</h2>
           <p>Advokatfirmaet Torgersen er spesialisert innen personskade, erstatning og trygderett.
             Advokat Anette Torgersen etablerte firmaet etter mange år i større advokatfirmaer, og
-            tar i dag oppdrag over hele landet fra kontoret i Asker.</p>
+            i dag er vi et team av advokater, advokatfullmektiger og juridiske assistenter som tar
+            oppdrag over hele landet fra kontoret i Asker.</p>
           <p>Vi arbeider for personer som har blitt skadet eller syke – som regel den svakere part
             i møte med forsikringsselskap og staten. Du skal slippe å kjempe alene. Vi tar
             tyngden av juss, dokumentasjon og forhandlinger, slik at du kan bruke kreftene på å
@@ -82,27 +94,33 @@
         <div class="grid">
           <article class="card reveal">
             <span class="num">01</span>
-            <h3>Personskadeerstatning</h3>
-            <p>Trafikkulykke, yrkesskade, pasientskade eller annen ulykke? Vi sikrer at du får
+            <h3><a href="personskade.html">Personskade</a></h3>
+            <p>Trafikkskade, yrkesskade, pasientskade eller annen ulykke? Vi sikrer at du får
               dekket både økonomisk tap og menerstatning.</p>
           </article>
           <article class="card reveal">
             <span class="num">02</span>
-            <h3>Voldsoffererstatning</h3>
-            <p>Er du utsatt for vold eller overgrep, bistår vi deg trygt gjennom hele prosessen
-              med krav mot gjerningsperson og staten.</p>
+            <h3><a href="bistandsadvokat.html">Bistandsadvokat</a></h3>
+            <p>Er du utsatt for vold eller overgrep, bistår vi deg trygt gjennom hele
+              straffesaken – ofte med staten som betaler.</p>
           </article>
           <article class="card reveal">
             <span class="num">03</span>
-            <h3>Trygderett</h3>
-            <p>Avslag fra NAV på uføretrygd, AAP eller yrkesskade? Vi kvalitetssikrer vedtaket
-              og fører klagen videre når det trengs.</p>
+            <h3><a href="voldsoffererstatning.html">Voldsoffererstatning</a></h3>
+            <p>Vi hjelper deg å søke voldsoffererstatning og å klage på vedtak fra Kontoret for
+              voldsoffererstatning (KFV).</p>
           </article>
           <article class="card reveal">
             <span class="num">04</span>
-            <h3>Forhandling &amp; mekling</h3>
-            <p>Med internasjonal mastergrad i forhandling finner vi gode løsninger – ofte uten
-              belastende og langdryg rettssak.</p>
+            <h3><a href="nav-saker.html">NAV / trygd</a></h3>
+            <p>Avslag på sykepenger, AAP eller uføretrygd? Vi kvalitetssikrer vedtaket og fører
+              klagen videre – helt til Trygderetten om nødvendig.</p>
+          </article>
+          <article class="card reveal">
+            <span class="num">05</span>
+            <h3><a href="familierett.html">Familierett</a></h3>
+            <p>Foreldreansvar, fast bosted og samvær. Vi hjelper deg å finne gode løsninger for
+              barna i en vanskelig tid.</p>
           </article>
         </div>
         <p class="reveal" style="text-align:center; margin-top:2.5rem">
@@ -114,8 +132,8 @@
     <!-- STATISTIKK -->
     <section class="section section--ink">
       <div class="container stats reveal">
-        <div class="stat"><div class="big">15+</div><div class="lbl">års erfaring som advokat</div></div>
-        <div class="stat"><div class="big">100%</div><div class="lbl">fokus på personskade &amp; trygd</div></div>
+        <div class="stat"><div class="big">8</div><div class="lbl">i teamet som hjelper deg</div></div>
+        <div class="stat"><div class="big">5</div><div class="lbl">fagområder vi er spesialister på</div></div>
         <div class="stat"><div class="big">Hele</div><div class="lbl">landet – oppdrag uansett bosted</div></div>
         <div class="stat"><div class="big">0 kr</div><div class="lbl">for første vurdering av saken</div></div>
       </div>
@@ -138,6 +156,39 @@
             <li><strong>Trygg prosess.</strong> Vi forklarer mulighetene dine i klartekst og tar belastningen for deg.</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <!-- TEAM-TEASER -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Menneskene</span>
+          <h2>Et helt team i ryggen din</h2>
+          <p>Advokater, advokatfullmektiger og juridiske assistenter med bred bakgrunn fra
+            domstolene, politiet og NAV – klare til å hjelpe deg.</p>
+        </div>
+        <div class="team reveal">
+          <article class="person">
+            <div class="photo"><img src="images/anette.jpg" alt="Anette Torgersen" loading="lazy"></div>
+            <div class="body"><h3>Anette Torgersen</h3><div class="role">Advokat / partner</div></div>
+          </article>
+          <article class="person">
+            <div class="photo"><img src="images/margit.png" alt="Margit Himle" loading="lazy"></div>
+            <div class="body"><h3>Margit Himle</h3><div class="role">Advokat</div></div>
+          </article>
+          <article class="person">
+            <div class="photo"><img src="images/kine.png" alt="Kine Utrimark" loading="lazy"></div>
+            <div class="body"><h3>Kine Utrimark</h3><div class="role">Advokat</div></div>
+          </article>
+          <article class="person">
+            <div class="photo"><img src="images/egil.png" alt="Egil Ax" loading="lazy"></div>
+            <div class="body"><h3>Egil Ax</h3><div class="role">Advokat</div></div>
+          </article>
+        </div>
+        <p class="reveal" style="text-align:center; margin-top:2.5rem">
+          <a href="ansatte.html" class="btn">Se hele teamet</a>
+        </p>
       </div>
     </section>
 
@@ -251,8 +302,11 @@
           <h4>Sider</h4>
           <p><a href="index.html">Forside</a><br>
             <a href="fagomrader.html">Fagområder</a><br>
+            <a href="priser.html">Priser</a><br>
             <a href="ansatte.html">Ansatte</a><br>
             <a href="om-firmaet.html">Om firmaet</a><br>
+            <a href="karriere.html">Karriere</a><br>
+            <a href="resultater-og-artikler.html">Resultater og artikler</a><br>
             <a href="kontakt.html">Kontakt</a></p>
         </div>
       </div>

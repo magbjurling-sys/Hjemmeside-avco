@@ -8,6 +8,16 @@ if (toggle && links) {
   });
 }
 
+// Nedtrekk: på mobil åpnes undermeny ved klikk på «parent»-lenke
+document.querySelectorAll('.nav-links .has-sub > .parent').forEach((parent) => {
+  parent.addEventListener('click', (e) => {
+    if (window.matchMedia('(max-width: 820px)').matches) {
+      e.preventDefault();
+      parent.parentElement.classList.toggle('open');
+    }
+  });
+});
+
 // Scroll-reveal
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && reveals.length) {

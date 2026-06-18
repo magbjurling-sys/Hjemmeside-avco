@@ -226,6 +226,8 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.1em;
 }
 .card h3 { margin: 0.5rem 0 0.6rem; }
+.card h3 a { color: var(--ink); }
+.card h3 a:hover { color: var(--gold); }
 .card p { margin: 0; font-size: 0.97rem; }
 
 /* ---------- Timeline (CV) ---------- */
@@ -554,3 +556,60 @@ img { max-width: 100%; display: block; }
 .person .contact a { color: var(--ink); }
 .person .contact a:hover { color: var(--gold); }
 .person .contact .lbl { color: var(--gold); }
+
+/* ---------- Nedtrekksmeny ---------- */
+.nav-links .has-sub { position: relative; }
+.nav-links .parent { cursor: pointer; }
+.nav-links .parent .caret { font-size: 0.7em; margin-left: 0.35em; }
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  min-width: 250px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 60;
+}
+.nav-links .has-sub:hover .submenu,
+.nav-links .has-sub:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.submenu li { padding: 0; }
+.submenu a {
+  display: block;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.92rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.submenu a::after { display: none; }
+.submenu a:hover { background: var(--cream-deep); color: var(--gold); }
+
+@media (max-width: 820px) {
+  .submenu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    min-width: 0;
+    border: 0;
+    box-shadow: none;
+    background: var(--cream-deep);
+    padding: 0;
+    display: none;
+  }
+  .nav-links .has-sub.open .submenu { display: block; }
+  .submenu a { padding: 0.85rem var(--pad); border-bottom: 1px solid var(--line); }
+  .nav-links .parent .caret { float: right; transition: transform .2s ease; }
+  .nav-links .has-sub.open .parent .caret { transform: rotate(180deg); }
+}
