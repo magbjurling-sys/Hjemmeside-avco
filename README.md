@@ -2,9 +2,9 @@
 
 Statisk nettsted for Advokatfirmaet Torgersen, bygget i ren HTML/CSS/JS.
 
-Stilen er inspirert av [avco.no](https://avco.no) – et rolig, profesjonelt
-advokatuttrykk med sort og krem/beige, serif-overskrifter, luftige seksjoner
-og en varm gull-aksent. Innholdet (tekst og struktur) er hentet fra
+Stilen er et rolig, profesjonelt advokatuttrykk med sort og krem/beige,
+serif-overskrifter, luftige seksjoner og en varm gull-aksent. Innholdet
+(tekst og struktur) er hentet fra
 [advokattorgersen.no](https://advokattorgersen.no).
 
 ## Sider
@@ -20,15 +20,17 @@ Nettstedet har 43 sider per språk:
 
 ## Språk
 
-Nettstedet finnes på tre språk, med språkvelger (NO / EN / PL) i menyen:
+Nettstedet finnes på fem språk, med språkvelger (NO / EN / PL / RU / DE) i menyen:
 
 | Språk | Mappe | Eksempel |
 | --- | --- | --- |
 | Norsk (bokmål) | rot | `index.html` |
 | Engelsk | `en/` | `en/index.html` |
 | Polsk | `pl/` | `pl/index.html` |
+| Russisk | `ru/` | `ru/index.html` |
+| Tysk | `de/` | `de/index.html` |
 
-Alle tre språkversjonene deler samme `css/`, `js/` og `images/`.
+Alle språkversjonene deler samme `css/`, `js/` og `images/`.
 Skjemameldinger i `js/main.js` tilpasses sidens `<html lang>` automatisk.
 
 ## Struktur
@@ -38,6 +40,8 @@ Skjemameldinger i `js/main.js` tilpasses sidens `<html lang>` automatisk.
 ├── index.html … (43 norske sider i rot)
 ├── en/         # engelsk versjon (43 sider)
 ├── pl/         # polsk versjon (43 sider)
+├── ru/         # russisk versjon (43 sider)
+├── de/         # tysk versjon (43 sider)
 ├── css/style.css
 ├── js/main.js
 ├── images/                  # portretter (8 ansatte) + medlemslogo
@@ -74,7 +78,7 @@ Slik aktiverer du det én gang:
 
 1. Merge denne branchen til `main`.
 2. På GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Workflowen kjører og publiserer på `https://<bruker>.github.io/hjemmeside-avco/`.
+3. Workflowen kjører og publiserer på `https://<bruker>.github.io/<repo>/`.
 
 ## Kontaktskjema (Formspree)
 
