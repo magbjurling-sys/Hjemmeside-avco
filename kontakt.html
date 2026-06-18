@@ -68,7 +68,8 @@
 
         <div class="reveal">
           <h2>Send oss en melding</h2>
-          <form id="kontaktskjema" novalidate>
+          <!-- Bytt REPLACE_WITH_YOUR_ID med din egen Formspree-skjema-ID (formspree.io). -->
+          <form id="kontaktskjema" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" novalidate>
             <div class="form-field">
               <label for="navn">Navn</label>
               <input type="text" id="navn" name="navn" required autocomplete="name">
@@ -129,6 +130,8 @@
           <span class="brand">Advokatfirmaet Torgersen</span>
           <p style="margin-top:1rem;">Din personskadeadvokat. Spesialisert innen
             personskadeerstatning, voldsoffererstatning og trygderett. Oppdrag over hele landet.</p>
+          <img src="images/medlem-advokatforeningen.png" alt="Medlem av Advokatforeningen"
+               style="margin-top:1.2rem;width:170px;opacity:.85" loading="lazy">
         </div>
         <div>
           <h4>Kontakt</h4>
