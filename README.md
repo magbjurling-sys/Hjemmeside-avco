@@ -12,8 +12,9 @@ og en varm gull-aksent. Innholdet (tekst og struktur) er hentet fra
 | Fil | Innhold |
 | --- | --- |
 | `index.html` | Forside med intro, fagområder og kontakt-CTA |
-| `om-firmaet.html` | Om firmaet og CV for advokat Anette Torgersen |
 | `fagomrader.html` | Personskade, voldsoffererstatning, trygderett, mekling |
+| `ansatte.html` | Ansatte – advokater, fullmektiger og assistenter med kort/portrett |
+| `om-firmaet.html` | Om firmaet og CV for advokat Anette Torgersen |
 | `kontakt.html` | Kontaktinfo, kontaktskjema og kart |
 
 ## Struktur
