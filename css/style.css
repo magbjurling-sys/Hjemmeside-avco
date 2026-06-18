@@ -348,7 +348,7 @@ img { max-width: 100%; display: block; }
     overflow: hidden;
     transition: max-height .3s ease;
   }
-  .nav-links.open { max-height: 360px; }
+  .nav-links.open { max-height: calc(100vh - 78px); overflow-y: auto; }
   .nav-links li { padding: 0 var(--pad); }
   .nav-links a { display: block; padding: 1rem 0; border-bottom: 1px solid var(--line); }
   .nav-links a::after { display: none; }
