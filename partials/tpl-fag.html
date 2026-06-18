@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">Advokatfirmaet <span>Torgersen</span></a>
+      <button class="nav-toggle" aria-label="Meny" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Forside</a></li>
+        <li class="has-sub">
+          <a href="fagomrader.html" class="parent active">Fagområder<span class="caret">▾</span></a>
+          <ul class="submenu">
+            <li><a href="fagomrader.html">Alle fagområder</a></li>
+            <li><a href="personskade.html">Personskade</a></li>
+            <li><a href="bistandsadvokat.html">Bistandsadvokat</a></li>
+            <li><a href="voldsoffererstatning.html">Voldsoffererstatning</a></li>
+            <li><a href="nav-saker.html">NAV / trygd</a></li>
+            <li><a href="familierett.html">Familierett</a></li>
+          </ul>
+        </li>
+        <li><a href="priser.html">Priser</a></li>
+        <li><a href="ansatte.html">Ansatte</a></li>
+        <li><a href="om-firmaet.html">Om firmaet</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+{{MAIN}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">Advokatfirmaet Torgersen</span>
+          <p style="margin-top:1rem;">Din personskadeadvokat. Spesialisert innen
+            personskadeerstatning, voldsoffererstatning og trygderett. Oppdrag over hele landet.</p>
+          <img src="images/medlem-advokatforeningen.png" alt="Medlem av Advokatforeningen"
+               style="margin-top:1.2rem;width:170px;opacity:.85" loading="lazy">
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <p>Olav Brunborgs vei 6<br>1396 Billingstad<br><br>
+            Tlf: <a href="tel:+4798672929">98 67 29 29</a><br>
+            <a href="mailto:at@advokattorgersen.no">at@advokattorgersen.no</a><br>
+            <a href="mailto:post@advokattorgersen.no">post@advokattorgersen.no</a></p>
+        </div>
+        <div>
+          <h4>Sider</h4>
+          <p><a href="index.html">Forside</a><br>
+            <a href="fagomrader.html">Fagområder</a><br>
+            <a href="priser.html">Priser</a><br>
+            <a href="ansatte.html">Ansatte</a><br>
+            <a href="om-firmaet.html">Om firmaet</a><br>
+            <a href="karriere.html">Karriere</a><br>
+            <a href="resultater-og-artikler.html">Resultater og artikler</a><br>
+            <a href="kontakt.html">Kontakt</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Advokatfirmaet Torgersen</span>
+        <span>Asker · Oppdrag over hele landet</span>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="sticky-cta" aria-label="Rask kontakt">
+    <a href="tel:+4798672929">Ring 98 67 29 29</a>
+    <a href="kontakt.html">Gratis vurdering</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -613,3 +613,34 @@ img { max-width: 100%; display: block; }
   .nav-links .parent .caret { float: right; transition: transform .2s ease; }
   .nav-links .has-sub.open .parent .caret { transform: rotate(180deg); }
 }
+
+/* ---------- Språkvelger ---------- */
+.nav-links .lang-switch {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-left: 1.2rem;
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--line);
+}
+.nav-links .lang-switch a {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 0.15rem 0.1rem;
+}
+.nav-links .lang-switch a::after { display: none; }
+.nav-links .lang-switch a:hover { color: var(--gold); }
+.nav-links .lang-switch a.active { color: var(--gold); font-weight: 700; }
+
+@media (max-width: 820px) {
+  .nav-links .lang-switch {
+    margin: 0;
+    padding: 1rem var(--pad);
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    gap: 1rem;
+  }
+  .nav-links .lang-switch a { font-size: 0.95rem; padding: 0.3rem 0; }
+}
