@@ -28,8 +28,10 @@ if ('IntersectionObserver' in window && reveals.length) {
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
   reveals.forEach((el) => io.observe(el));
+  // Sikkerhetsnett: ingen seksjon skal kunne bli stående usynlig
+  setTimeout(() => reveals.forEach((el) => el.classList.add('in')), 1800);
 } else {
   reveals.forEach((el) => el.classList.add('in'));
 }

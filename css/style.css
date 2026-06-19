@@ -208,15 +208,18 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Cards / practice areas ---------- */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
+.grid > * { flex: 1 1 240px; max-width: 320px; }
 .card {
   background: var(--white);
   border: 1px solid var(--line);
   padding: 2rem 1.8rem;
   transition: transform .25s ease, box-shadow .25s ease;
+  overflow-wrap: break-word;
 }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .card .num {
@@ -225,7 +228,7 @@ img { max-width: 100%; display: block; }
   font-size: 1.1rem;
   letter-spacing: 0.1em;
 }
-.card h3 { margin: 0.5rem 0 0.6rem; }
+.card h3 { margin: 0.5rem 0 0.6rem; overflow-wrap: break-word; }
 .card h3 a { color: var(--ink); }
 .card h3 a:hover { color: var(--gold); }
 .card p { margin: 0; font-size: 0.97rem; }
