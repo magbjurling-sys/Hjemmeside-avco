@@ -11,7 +11,7 @@ if (toggle && links) {
 // Nedtrekk: på mobil åpnes undermeny ved klikk på «parent»-lenke
 document.querySelectorAll('.nav-links .has-sub > .parent').forEach((parent) => {
   parent.addEventListener('click', (e) => {
-    if (window.matchMedia('(max-width: 820px)').matches) {
+    if (window.matchMedia('(max-width: 1024px)').matches) {
       e.preventDefault();
       parent.parentElement.classList.toggle('open');
     }
@@ -118,3 +118,19 @@ if (form) {
     }
   });
 }
+
+// Google Maps: last først ved klikk (unngår tredjeparts-cookies før samtykke)
+document.querySelectorAll('.map-load').forEach((b) => {
+  b.addEventListener('click', () => {
+    const f = document.createElement('iframe');
+    f.src = b.getAttribute('data-src');
+    f.title = 'Kart';
+    f.loading = 'lazy';
+    f.width = '100%';
+    f.height = '420';
+    f.style.border = '0';
+    f.style.display = 'block';
+    f.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+    b.replaceWith(f);
+  });
+});
