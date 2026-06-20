@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://magbjurling-sys.github.io/Hjemmeside-Torgersen/sitemap.xml
